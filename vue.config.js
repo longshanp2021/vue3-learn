@@ -1,6 +1,7 @@
 const { defineConfig } = require("@vue/cli-service");
 module.exports = defineConfig({
   transpileDependencies: true,
+  lintOnSave: false, //关闭语法检查
   //scss全局变量配置
   css: {
     loaderOptions: {
