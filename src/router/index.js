@@ -23,8 +23,11 @@ const Login = () => import("../components/Login.vue");
 const Layout = () => import("../components/Layout.vue");
 const LayoutDemo = () => import("../components/LayoutDemo.vue");
 
-
 const routes = [
+  {
+    path: "",
+    redirect: "/Layout/Home",
+  },
   {
     path: "/Login",
     component: Login,
@@ -47,8 +50,7 @@ const routes = [
     children: [
       {
         path: "",
-        redirect: "Home",
-        component: Home,
+        redirect: "/Layout/Home",
       },
       {
         path: "Home",
